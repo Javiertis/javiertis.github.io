@@ -1,13 +1,12 @@
 /*Estilos generales*/
 
 body {
-    margin: 0px;
+    margin: auto;
     font-family: "Jura", sans-serif;
 }
 
-
 .container {
-    height: 80vh;
+    height: 100vh;
 }
 
 a {
@@ -21,7 +20,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 35px;
+    padding: 7vh;
     font-weight: bolder;
 }
 
@@ -84,7 +83,7 @@ a {
 }
 
 .portfolio-img-bg {
-    height: 30vw;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,14 +154,13 @@ a {
 /*Footer*/
 
 .footer {
-    padding: 10px;
+    padding: 7vh;
     text-align: center;
     justify-content: center;
     background-color: #41436a;
     transition: color 0.5s;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    margin: auto;
 }
 
 .footer i {

@@ -1,1 +1,2 @@
 # WIP
+- [ ] El footer
