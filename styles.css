@@ -20,7 +20,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 7vh;
+    padding: 6vh;
     font-weight: bolder;
 }
 
@@ -50,6 +50,7 @@ a {
 }
 
 .brand {
+    font-size: 3vh;
     color: #F64668;
 }
 
@@ -83,7 +84,7 @@ a {
 }
 
 .portfolio-img-bg {
-    height: 60vh;
+    height: 67vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,13 +149,16 @@ a {
     width: auto;
     text-align: justify;
     justify-content: right;
-    padding: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /*Footer*/
 
 .footer {
-    padding: 7vh;
+    padding: 3vh;
     text-align: center;
     justify-content: center;
     background-color: #41436a;
