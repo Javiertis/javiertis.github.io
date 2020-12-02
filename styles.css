@@ -38,19 +38,20 @@ a {
     display: flex;
 }
 
-.nav-wrapper>.right-side>div {
-    margin-right: 24px;
+.nav-wrapper .right-side div {
+    margin-right: 25px;
     text-transform: uppercase;
 }
 
 .nav-link-wrapper {
     height: 25px;
+    font-size: medium;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
 
 .brand {
-    font-size: 3vh;
+    font-size: x-large;
     color: #F64668;
 }
 
@@ -105,7 +106,7 @@ a {
 }
 
 .img-text-wrapper .title {
-    transition: 1s;
+    transition: 0.5s;
     font-weight: bolder;
     color: transparent;
 }
@@ -118,7 +119,7 @@ a {
 }
 
 .img-text-wrapper .subtitle {
-    transition: 0.25s;
+    transition: 0.5s;
     font-weight: 600;
     color: transparent;
 }
@@ -130,7 +131,7 @@ a {
 }
 
 .img-darken {
-    transition: 1s;
+    transition: 0.25s;
     filter: brightness(10%) blur(1px) grayscale(20%);
 }
 
