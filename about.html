@@ -11,7 +11,6 @@
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Jura" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -65,28 +64,7 @@
         </div>
     </div>
 
-    </div>
+    <script src="script.js"></script>
 </body>
-<script>
-    var brand = document.getElementById('brand');
-    var page_title = document.getElementById('title');
-    var titles = [
-        'Javier Tejedor',
-        'J4v13r T3j3d0r',
-        '/home/javier_tejedor/portfolio $',
-        'C:\\Users\\javier_tejedor >',
-        'Console.WriteLine("Javier Tejedor")',
-        'echo "Javier Tejedor"',
-        'System.out.println("Javier Tejedor")'
-    ];
-
-    function newTitle() {
-        var i = (Math.random() * titles.length) | 0;
-        brand.innerText = titles[i];
-        page_title.innerText = titles[i];
-    }
-
-    newTitle()
-</script>
 
 </html>
