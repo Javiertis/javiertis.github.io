@@ -7,6 +7,7 @@ portfolioItems.forEach(portfolioItem => {
         portfolioItem.childNodes[1].classList.remove('img-darken');
     })
 })
+
 var brand = document.getElementById('brand');
 var page_title = document.getElementById('title');
 var titles = [
@@ -22,7 +23,6 @@ var titles = [
 function newTitle() {
     var i = (Math.random() * titles.length) | 0;
     brand.innerText = titles[i];
-    page_title.innerText=titles[i];
 }
 
 newTitle()

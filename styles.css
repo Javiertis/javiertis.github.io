@@ -3,12 +3,19 @@
 body {
     margin: auto;
     font-family: "Jura", sans-serif;
+
+    
 }
 
 .container {
     height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
 }
-
+.container::-webkit-scrollbar {
+    display: none;
+  }
 a {
     text-decoration: none;
 }
@@ -142,12 +149,13 @@ a {
     transition: 0.5s;
 }
 
-.profile-img-wrapper img {
+.profile-img-wrapper img{
     width: 100%;
 }
 
 .profile-content-wrapper {
     width: auto;
+    height: auto;
     text-align: justify;
     justify-content: right;
     padding-right: 30px;
@@ -159,7 +167,11 @@ a {
 /*Footer*/
 
 .footer {
-    padding: 7vh;
+    position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2vh;
     text-align: center;
     justify-content: center;
     background-color: #41436a;
