@@ -49,36 +49,37 @@ a {
 }
 
 .nav-link-wrapper {
-    height: 20px;
+    height: 23px;
+    width: auto;
     font-size: medium;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
+    color: #984063;
+    transition: color 0.5s;
+    transition: font-size 0.5s;
 }
 
 .brand {
     font-size: larger;
     color: #F64668;
-}
-
-.nav-link-wrapper a {
-    color: #984063;
     transition: color 0.5s;
+    transition: font-size 0.5s;
 }
-
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid #fe9677;
-}
-
-.nav-link-wrapper a:hover {
+.brand:hover{
     color: #fe9677;
+    font-size: x-large;
+}
+
+.nav-link-wrapper:hover  {
+    border-bottom: 1px solid #fe9677;
+    color: #fe9677;
+    font-size: large;
 }
 
 .active-nav-link {
     border-bottom: 1px solid #F64668;
-}
-
-.active-nav-link a {
     color: #F64668;
+    font-size: large;
 }
 
 /*Portfolio*/
@@ -149,7 +150,6 @@ a {
 
 .profile-img-wrapper {
     height: 75vh;
-    background:linear-gradient(top bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,21 +177,20 @@ a {
     justify-content: center;
     background-color: #41436a;
     transition: color 0.5s;
+    font-size: medium;
+    font-weight: bolder;
+    transition: font-size font-weight 0.5s;
+    color: #F64668;
 }
 
 .footer i {
     padding: 1vw 1vh;
 }
 
-.footer footer {
-    color: #F64668;
-}
 
 .footer a:hover {
+    font-size: x-large;
+    font-weight: bolder;
     border-bottom: 1px solid #fe9677;
     color: #fe9677;
-}
-
-.footer a {
-    color: #F64668;
 }
