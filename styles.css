@@ -1,10 +1,7 @@
 /*Estilos generales*/
 
 body {
-    margin: auto;
     font-family: "Jura", sans-serif;
-
-    
 }
 
 .container {
@@ -15,7 +12,7 @@ body {
 }
 .container::-webkit-scrollbar {
     display: none;
-  }
+}
 a {
     text-decoration: none;
 }
@@ -27,7 +24,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 6vh;
+    padding: 4vh;
     font-weight: bolder;
 }
 
@@ -46,12 +43,12 @@ a {
 }
 
 .nav-wrapper .right-side div {
-    margin-right: 25px;
+    margin-right: 20px;
     text-transform: uppercase;
 }
 
 .nav-link-wrapper {
-    height: 25px;
+    height: 20px;
     font-size: medium;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
@@ -149,8 +146,12 @@ a {
     transition: 0.5s;
 }
 
-.profile-img-wrapper img{
-    width: 100%;
+.profile-img-wrapper {
+    height: 75vh;
+    background:linear-gradient(top bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile-content-wrapper {
@@ -158,10 +159,7 @@ a {
     height: auto;
     text-align: justify;
     justify-content: right;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 2vh 2vw;
 }
 
 /*Footer*/
@@ -169,19 +167,19 @@ a {
 .footer {
     position: sticky;
   left: 0;
+  right: 0;
   bottom: 0;
+  height: min-content;
   width: 100%;
-  padding-top: 2vh;
+  padding: 2vh 3vw;
     text-align: center;
     justify-content: center;
     background-color: #41436a;
     transition: color 0.5s;
-    width: 100%;
-    margin: auto;
 }
 
 .footer i {
-    padding: 1vw;
+    padding: 1vw 1vh;
 }
 
 .footer footer {
