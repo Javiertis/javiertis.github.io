@@ -1,0 +1,57 @@
+javiertis
+==================================================================
+https://keybase.io/javiertis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://portfolio.javiertejedor.xyz
+  * I am javiertis (https://keybase.io/javiertis) on keybase.
+  * I have a public key ASD9F5P7XUxMXVs-3WhGwjMC24rKSRfNTNnuI8AP-SYDNQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f8d614b565855f63d2d4673b9ef2a1762e26f133bbd7da1525e98933dd733a890a",
+      "host": "keybase.io",
+      "kid": "0120fd1793fb5d4c4c5d5b3edd6846c23302db8aca4917cd4cd9ee23c00ff92603350a",
+      "uid": "4d95b39cc1731781f7bd622fe04c6619",
+      "username": "javiertis"
+    },
+    "merkle_root": {
+      "ctime": 1613579793,
+      "hash": "29292c8f2e0ea23a2ead0682f17c712689df407fac01fb6a7885a60727bdfa3266726bad5ba94390965123382a2605e593f8e058f2de321a54dc645dd884c62e",
+      "hash_meta": "bd79e4bda39175954a4371d65ca94ab5607a9a07b38e19abbbb22fb2f742612e",
+      "seqno": 19141656
+    },
+    "service": {
+      "entropy": "2PR12y2h+lCk+fYGAb7GLh9b",
+      "hostname": "portfolio.javiertejedor.xyz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1613579826,
+  "expire_in": 504576000,
+  "prev": "5941fbe1b6e04a1b0f9d0d520d997f99825f13bc1954aaf46a86fd5b56f83f0a",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/ReT+11MTF1bPt1oRsIzAtuKykkXzUzZ7iPAD/kmAzUKp3BheWxvYWTESpcCCsQgWUH74bbgShsPnQ1SDZl/mYJfE7wZVKr0aob9W1b4PwrEICywAMHkS0NI/ISX6o2CCp3+eFZVH6NAbXkO3Tn9Qn8gAgHCo3NpZ8RAMPPv4lz0fX94zyQQYsfbrab20mTNyx8VD7IYzbENQoC10KMo1cOKOk2RAUVvLB1AbGDIQZNYTDb6GsmXa7XOD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGsXIGGnMkJYCcLCpuOPaUMKPM8z4uzhZXfL8C4LsHcOo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/javiertis
+
+==================================================================
