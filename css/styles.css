@@ -1,194 +1,57 @@
 /*Estilos generales*/
 
 body {
-    font-family: "Jura", sans-serif;
-    font-display: auto;
+  font-family: "Jura", sans-serif;
+  margin: 0;
+  padding-top: 20px;
+  background-color: hsl(237, 30%, 80%);
 }
 
 .container {
-    height: 100vh;
-    overflow: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
-}
-.container::-webkit-scrollbar {
-    display: none;
-}
-a {
-    text-decoration: none;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-items: center;
 }
 
-/*Navbar*/
-
-.nav-wrapper {
-    background-color: #41436a;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 4vh;
-    font-weight: bolder;
+.img {
+  height: 25vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2vh;
+  box-shadow: 2px 2px 2px 2px hsl(237, 30%, 30%);
 }
-
-@media only screen and (max-width: 600px) {
-    .nav-wrapper {
-        flex-direction: column;
-    }
-    .right-side {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.right-side {
-    display: flex;
-}
-
-.nav-wrapper .right-side div {
-    margin-right: 20px;
-    text-transform: uppercase;
-}
-
-.nav-link-wrapper {
-    height: 23px;
-    width: max-content;
-    font-size: medium;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-    color: #984063;
-    transition: color 0.5s;
-    transition: font-size 0.5s;
-}
-
-.brand {
-    font-size: larger;
-    color: #F64668;
-    transition: color 0.5s;
-}
-.brand:hover{
-    color: #fe9677;
-}
-
-.nav-link-wrapper:hover  {
-    border-bottom: 1px solid #fe9677;
-    color: #fe9677;
-    font-size: large;
-}
-
-.active-nav-link {
-    border-bottom: 1px solid #F64668;
-    color: #F64668;
-    font-size: large;
-}
-
-/*Portfolio*/
-
-.portfolio-item-wrapper {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    position: relative;
-}
-
-.portfolio-img-bg {
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(40%) blur(3px);
-}
-
-.img-text-wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-}
-
-.img-text-wrapper .title {
-    transition: 0.5s;
-    font-weight: bolder;
-    color: transparent;
-}
-
-.img-text-wrapper:hover .title {
-    font-size: 5vh;
-    margin-bottom: 3vh;
-    font-weight: bolder;
-    color: #fe9677;
-}
-
-.img-text-wrapper .subtitle {
-    transition: 0.5s;
-    font-weight: 600;
-    color: transparent;
-}
-
-.img-text-wrapper:hover .subtitle {
-    font-size: 3vh;
-    font-weight: 600;
-    color: #a4a6ad;
-}
-
-.img-darken {
-    transition: 0.25s;
-    filter: brightness(10%) blur(1px) grayscale(20%);
-}
-
-/*About page*/
-
-.transition-fade {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.profile-img-wrapper {
-    height: 75vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.profile-content-wrapper {
-    width: auto;
-    height: auto;
-    text-align: justify;
-    justify-content: right;
-    padding: 2vh 2vw;
-}
-
-/*Footer*/
-
-.footer {
-    position: sticky;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: min-content;
+.name {
   width: 100%;
-  padding: 2vh 3vw;
-    text-align: center;
-    justify-content: center;
-    background-color: #41436a;
-    transition: color 0.5s;
-    font-size: medium;
-    font-weight: bolder;
-    transition: font-size font-weight 0.5s;
-    color: #F64668;
+  font-weight: 900;
+  color: hsl(237, 30%, 20%);
+  text-align: center;
+}
+.name h2 {
+  font-weight: 200;
+  color: hsl(237, 30%, 40%);
 }
 
-.footer i {
-    padding: 1vw 1vh;
+.links {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1em;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 1em;
+  text-align: center;
 }
 
-
-.footer a:hover {
-    font-size: x-large;
-    font-weight: bolder;
-    border-bottom: 1px solid #fe9677;
-    color: #fe9677;
+.links a {
+  font-size: xx-large;
+  text-decoration: none;
+  border: 1px solid hsl(237, 30%, 50%);
+  border-radius: 2vh;
+  padding: 1rem;
+  color: hsl(237, 30%, 20%);
+  box-shadow: 1px 1px 0 1px hsl(237, 30%, 30%);
 }
