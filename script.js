@@ -1,4 +1,4 @@
-var page_title = document.getElementById('title');
+var pageTitles = Object.values(document.getElementsByClassName('title'));
 var titles = [
     'Javier Tejedor',
     'J4v13r T3j3d0r',
@@ -9,9 +9,6 @@ var titles = [
     'System.out.println("Javier Tejedor")'
 ];
 
-function newTitle() {
-    var i = (Math.random() * titles.length) | 0;
-    page_title.innerText = titles[i];
-}
-
-newTitle();
+setInterval(() => {
+    pageTitles.forEach(p => p.innerHTML = titles[(Math.random() * titles.length) | 0]);
+}, 60_000);
