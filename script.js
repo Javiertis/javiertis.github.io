@@ -11,7 +11,5 @@ const switchTitle = () => {
     ];
     pageTitles.forEach(p => p.innerHTML = titles[(Math.random() * titles.length) | 0]);
 };
-
 setInterval(switchTitle, 60_000);
-
 const switchDark = () => document.getElementsByTagName('body')[0].classList.toggle('dark');
