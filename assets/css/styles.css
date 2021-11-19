@@ -61,7 +61,6 @@ body {
 }
 
 .profile-picture {
-  width: 320px;
   border-radius: 2em;
   box-shadow: var(--shadow);
 }
