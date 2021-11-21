@@ -1,4 +1,3 @@
-/*Estilos generales*/
 :root {
   --color-primary: hsl(240, 30%, 15%);
   --color-secondary: hsl(240, 30%, 30%);
@@ -6,11 +5,15 @@
   --color-border: hsl(240, 30%, 60%);
   --bg-color: hsl(240, 30%, 75%);
   --bg-color-secondary: hsl(240, 30%, 90%);
+  --slider-color: var(--bg-color);
+  --slider-color-secondary: var(--color-primary);
+
   --shadow: inset 0 0 0.125em 0 var(--color-shadow),
     0 0 0.125em 0.125em var(--color-shadow);
   --shadow-inset: inset 0 0 0.125em 0.125em var(--color-shadow),
     0 0 0.125em 0 var(--color-shadow);
-  --transition: box-shadow 250ms linear, color 100ms linear;
+  --box-shadow-transition: box-shadow 0.25s linear, color 0.25s linear;
+  --bg-color-transition: background-color 0.4s linear, color 0.4s linear;
 }
 
 .dark {
@@ -20,37 +23,22 @@
   --color-border: hsl(240, 30%, 45%);
   --bg-color: hsl(240, 30%, 30%);
   --bg-color-secondary: hsl(240, 30%, 15%);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: hsl(240, 30%, 90%);
-    --color-secondary: hsl(240, 30%, 75%);
-    --color-shadow: hsl(240, 30%, 60%);
-    --color-border: hsl(240, 30%, 45%);
-    --bg-color: hsl(240, 30%, 30%);
-    --bg-color-secondary: hsl(240, 30%, 15%);
-  }
-  .dark {
-    --color-primary: hsl(240, 30%, 15%);
-    --color-secondary: hsl(240, 30%, 30%);
-    --color-shadow: hsl(240, 30%, 45%);
-    --color-border: hsl(240, 30%, 60%);
-    --bg-color: hsl(240, 30%, 75%);
-    --bg-color-secondary: hsl(240, 30%, 90%);
-  }
+  --slider-color: var(--bg-color);
+  --slider-color-secondary: var(--color-primary);
 }
 
 body {
   font-family: "Jura", sans-serif;
-  margin: 0 auto;
+  margin: auto;
+  height: 100%;
+  width: 100%;
   padding-top: 20px;
   background-color: var(--bg-color);
   max-width: 800px;
   text-align: center;
   font-weight: 900;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: var(--bg-color-transition);
+  transition: var(--bg-color-transition);
 }
 
 .header-container {
@@ -84,7 +72,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-content: space-evenly;
   text-align: center;
-  transition: var(--transition);
+  -webkit-transition: var(--box-shadow-transition);
+  transition: var(--box-shadow-transition);
 }
 
 .links a {
@@ -105,7 +94,6 @@ body {
   box-shadow: var(--shadow-inset);
 }
 
-/* Switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -126,7 +114,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--bg-color-secondary);
+  background-color: var(--slider-color-secondary);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 2rem;
@@ -134,24 +122,27 @@ body {
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: "🌞";
   height: 1.5rem;
   width: 1.5rem;
   left: 0.25rem;
   bottom: 0.25rem;
-  background-color: var(--color-primary);
+  background-color: var(--slider-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
+  text-align: center;
+  text-justify: center;
 }
 
 input:checked + .slider {
-  background-color: var(--color-primary);
+  background-color: var(--slider-color-secondary);
 }
 
 input:checked + .slider:before {
-  background-color: var(--bg-color-secondary);
+  background-color: var(--slider-color);
   -webkit-transform: translateX(1.5rem);
   -ms-transform: translateX(1.5rem);
   transform: translateX(1.5rem);
+  content: "🌚";
 }

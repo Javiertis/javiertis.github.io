@@ -11,5 +11,14 @@ const switchTitle = () => {
     ];
     pageTitles.forEach(p => p.innerHTML = titles[(Math.random() * titles.length) | 0]);
 };
-setInterval(switchTitle, 60_000);
+
+const checked = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 const switchDark = () => document.getElementsByTagName('body')[0].classList.toggle('dark');
+
+sdocument.getElementById('switch-theme').checked = checked;
+
+if (checked) { switchDark(); };
+
+setInterval(switchTitle, 60_000);
+
