@@ -13,12 +13,15 @@ const switchTitle = () => {
     pageTitles.forEach(p => p.innerHTML = titles[(Math.random() * titles.length) | 0]);
 };
 
-const checked = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
 const switchDark = () => document.getElementsByTagName('body')[0].classList.toggle('dark');
 
-document.getElementById('switch-theme').checked = checked;
+const switchThemeMQCallback = userPreference => {
+    document.getElementById('switch-theme').checked = userPreference.matches;
+    if (userPreference.matches) { switchDark(); };
+};
 
-if (checked) { switchDark(); };
+switchThemeMQCallback(window.matchMedia('(prefers-color-scheme: dark)'));
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchThemeMQCallback);
 
 setInterval(switchTitle, 60_000);
