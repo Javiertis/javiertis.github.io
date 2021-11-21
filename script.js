@@ -12,16 +12,17 @@ const switchTitle = () => {
     ];
     pageTitles.forEach(p => p.innerHTML = titles[(Math.random() * titles.length) | 0]);
 };
+setInterval(switchTitle, 60_000);
 
-const switchDark = () => document.getElementsByTagName('body')[0].classList.toggle('dark');
+const userThemePreference = window.matchMedia('(prefers-color-scheme: dark)');
+const toggleDark = () => document.getElementsByTagName('body')[0].classList.toggle('dark');
 
-const switchThemeMQCallback = userPreference => {
+const switchTheme = userPreference => {
     document.getElementById('switch-theme').checked = userPreference.matches;
-    if (userPreference.matches) { switchDark(); };
+    if (userPreference.matches) { toggleDark(); };
 };
 
-switchThemeMQCallback(window.matchMedia('(prefers-color-scheme: dark)'));
+switchTheme(userThemePreference);
 
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchThemeMQCallback);
+userThemePreference.addEventListener('change', switchTheme);
 
-setInterval(switchTitle, 60_000);
