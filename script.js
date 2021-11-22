@@ -19,7 +19,7 @@ const toggleDark = () => document.getElementsByTagName('body')[0].classList.togg
 
 const switchTheme = userPreference => {
     document.getElementById('switch-theme').checked = userPreference.matches;
-    if (userPreference.matches) { toggleDark(); };
+    if (document.getElementById('switch-theme').checked) { toggleDark(); };
 };
 
 switchTheme(userThemePreference);
