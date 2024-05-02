@@ -12,9 +12,9 @@ const switchTitle = () => {
     ];
     pageTitles.forEach(p => p.innerHTML = titles[(Math.random() * titles.length) | 0]);
 };
-setInterval(switchTitle, 60_000);
 
 const userThemePreference = window.matchMedia('(prefers-color-scheme: dark)');
+
 const toggleDark = () => document.getElementsByTagName('body')[0].classList.toggle('dark');
 
 const switchTheme = userPreference => {
@@ -22,7 +22,9 @@ const switchTheme = userPreference => {
     if (document.getElementById('switch-theme').checked) { toggleDark(); };
 };
 
+
 switchTheme(userThemePreference);
 
 userThemePreference.addEventListener('change', switchTheme);
 
+setInterval(switchTitle, 60_000);
